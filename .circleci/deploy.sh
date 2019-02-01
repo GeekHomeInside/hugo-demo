@@ -5,17 +5,15 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 TARGET_BRANCH="gh-pages"
+SOURCE_BRANCH="master"
 
-# Set Directory
-DIR=$(dirname "$0")
-
-cd $DIR/..
-
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
+# Clone the existing gh-pages for this repo into doc/
+# Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
+git clone $REPO public
+cd public
+git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+git reset --hard
+cd ..
 
 # Delete Old publication
 echo "Deleting old publication"
@@ -38,6 +36,6 @@ hugo -t meghna-hugo
 
 # Updating gh-pages branch
 echo "Updating gh-pages branch"
-cd public && git config --global user.name "aetreon" && git config --global user.email "aetreon.makeo@gmail.com" && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd public && git config --global user.name "aetreon" && git config --global user.email "aetreon.makeo@gmail.com" && git add --all && git commit -m "Publishing to gh-pages"
 
 git push $SSH_REPO $TARGET_BRANCH
