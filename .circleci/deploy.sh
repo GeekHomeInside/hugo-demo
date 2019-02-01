@@ -26,6 +26,6 @@ echo "Generating site"
 hugo -t meghna-hugo
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd public && git config --global user.name "aetreon" && git config --global user.email "aetreon.makeo@gmail.com" && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 
 git push upstream gh-pages
