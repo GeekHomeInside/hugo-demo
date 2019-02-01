@@ -6,6 +6,9 @@ jobs:
             - image: cibuilds/hugo:latest
         steps:
             - checkout
+            - run:
+                name: Prepare shell commands
+                command: chmod +x .circleci/deploy.sh
             - deploy:
                 name: Deploy to Github Pages
                 command: ./.circleci/deploy.sh
