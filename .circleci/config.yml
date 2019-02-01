@@ -3,7 +3,7 @@ version: 2.0
 jobs:
     build:
         docker:
-            - image: circleci/hugo:latest
+            - image: cibuilds/hugo:latest
         steps:
             - checkout
             - deploy:
