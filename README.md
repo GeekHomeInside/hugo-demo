@@ -1,2 +1,2 @@
 # hugo-demo
-Hugo Demo Site with meghna-hugo themes and deploy by CircleCI
+Demo for Site build with Hugo framework and Auto-deploy With Gitlab-CI

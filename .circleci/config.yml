@@ -1,0 +1,11 @@
+version: 2.0
+
+jobs:
+    build:
+        docker:
+            - image: circleci/hugo:latest
+        steps:
+            - checkout
+            - deploy:
+                name: Deploy to Github Pages
+                command: ./.circleci/deploy.sh
