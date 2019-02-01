@@ -6,6 +6,9 @@ jobs:
             - image: cibuilds/hugo:latest
         steps:
             - checkout
+            - add_ssh_keys:
+                fingerprints:
+                  - ""
             - run:
                 name: Prepare shell commands
                 command: chmod +x .circleci/deploy.sh
