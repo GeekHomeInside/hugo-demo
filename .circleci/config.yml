@@ -5,10 +5,10 @@ jobs:
         docker:
             - image: cibuilds/hugo:latest
         steps:
-            - checkout
             - add_ssh_keys:
                 fingerprints:
                   - "d8:ec:fa:7e:92:8e:33:34:5c:a6:e7:95:fb:21:80:2f"
+            - checkout
             - run:
                 name: Prepare shell commands
                 command: chmod +x .circleci/deploy.sh
