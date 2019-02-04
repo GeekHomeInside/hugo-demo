@@ -3,10 +3,10 @@
 set -xe
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
-if [ ! -z "$CIRCLE_PULL_REQUEST" -o "$CIRCLE_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy; just doing a build."
-    exit 0
-fi
+#if [ ! -z "$CIRCLE_PULL_REQUEST" -o "$CIRCLE_BRANCH" != "$SOURCE_BRANCH" ]; then
+#    echo "Skipping deploy; just doing a build."
+#    exit 0
+#fi
 
 # Save some useful information
 REPO=`git config remote.origin.url`
