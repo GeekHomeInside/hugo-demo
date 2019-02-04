@@ -20,9 +20,6 @@ jobs:
                 name: Checkout submodules
                 command: git submodule sync && git submodule update --init
             - run:
-                name: "Test Website"
-                command: htmlproofer ~/public --allow-hash-href --check-html --empty-alt-ignore
-            - run:
                 name: Prepare shell commands
                 command: chmod +x .circleci/deploy.sh
             - deploy:
