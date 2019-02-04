@@ -10,8 +10,8 @@ jobs:
             - GH_NAME: "aetreon"
         steps:
             - add_ssh_keys:
-              fingerprints:
-                - "78:d3:b9:08:0c:34:bd:09:2f:5d:ca:26:27:44:4f:20"
+                fingerprints:
+                  - "78:d3:b9:08:0c:34:bd:09:2f:5d:ca:26:27:44:4f:20"
             - checkout
             - run:
                 name: install git
