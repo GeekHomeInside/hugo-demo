@@ -27,4 +27,4 @@ hugo -t meghna-hugo
 echo "Updating gh-pages branch"
 cd public && git config --global user.name "aetreon" && git config --global user.email "aetreon.makeo@gmail.com" && git add --all && git commit -m "Publishing to gh-pages"
 
-git push $SSH_REPO $TARGET_BRANCH
+git push -f $SSH_REPO $TARGET_BRANCH
