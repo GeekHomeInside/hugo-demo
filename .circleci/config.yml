@@ -10,19 +10,12 @@ jobs:
             - HUGO_BUILD_DIR: ~/hugo/public
         steps:
             - checkout
-            - run: apk update && apk add git
-            - run: git checkout gh-pages
-            - run: git reset --hard
-            - run: hugo -t meghna-hugo
-            - run: git config user.name "Circle CI"
-            - run: git config user.email "$COMMIT_AUTHOR_EMAIL"
-            - run: git add -A .
-            - run: git commit -m "Deploy to GitHub Pages"
-            - run: git push -f
-              #- run: git submodule sync && git submodule update --init
-              #- run:
-              # name: Prepare shell commands
-              # command: chmod +x .circleci/deploy.sh
-              #- deploy:
-              #  name: Deploy to Github Pages
-              #  command: ./.circleci/deploy.sh
+            - run:
+                name: Checkout submodules
+                command: git submodule sync && git submodule update --init
+            - run:
+                name: Prepare shell commands
+                command: chmod +x .circleci/deploy.sh
+            - deploy:
+                name: Deploy to Github Pages
+                command: ./.circleci/deploy.sh
