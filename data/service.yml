@@ -3,25 +3,17 @@ heading : Our
 headingSpan : Services
 serviceItem :
   - icon : tf-globe
-    title : WordPress Theme
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
+    title : CLOUD & INFRASTRUCTURE
+    content : Le cloud vous permet d’atteindre la rapidité d’exécution requise pour devenir une entreprise Numérique.
+
   - icon : tf-ion-laptop
-    title : Responsive Design
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-genius
+    title : DIGITAL & DÉVELOPPEMENT
+    content : Adoptez les compétences Numériques qui vous permettront de révolutionner votre activité. Créez des expériences immersives pour vos clients, transformez les pratiques de travail de vos employés, et réinventez vos business Models !
+
+  - icon : AUDIT, CONSEIL & INNOVATION
     title : Media &amp; Advertisement
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
+    content : Transformez votre vision en des stratégies exécutables qui aboutiront à des Avancées tangibles !
+
   - icon : tf-dial
-    title : Graphic Design
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-target3
-    title : Apps Development
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-lifesaver
-    title : Networking
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
+    title : FORMATION
+    content : A l’ère de la Digitalisation, le partage de l’information est essentiel à la transformation digitale et à la croissance de l’innovation.

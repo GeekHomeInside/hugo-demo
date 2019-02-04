@@ -1,15 +1,18 @@
 enable : true
 heading : About
 headingSpan : Us
-aboutItem : 
-- icon : tf-tools
-  title : We're Creative
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+aboutItem :
 
 - icon : tf-strategy
-  title : We're Professional
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  title : Working together to revolutionate your activity
+  content : CCL CONSULTING est une Société de Conseil et un intégrateur de solutions innovantes.
+            Nous apportons, à nos clients, notre expertise et notre savoir-faire pour optimiser leur productivité tout en respectant leurs contraintes et leurs besoins.
+            Nos collaborateurs formés aux technologies du moment sauront vous accompagner dans toutes vos batailles.
 
 - icon : tf-anchor2
   title : We're Genius
+  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+- icon : tf-tools
+  title : We're Creative
   content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
