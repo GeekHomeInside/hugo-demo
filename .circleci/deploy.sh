@@ -8,10 +8,12 @@ set -xe
 #    exit 0
 #fi
 
+
 # Save some useful information
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
+
 TARGET_BRANCH="gh-pages"
 SOURCE_BRANCH="master"
 
