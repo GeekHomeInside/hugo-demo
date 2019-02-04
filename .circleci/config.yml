@@ -11,7 +11,7 @@ jobs:
         steps:
             - checkout
             - run: apk update && apk add git
-            - run: git checkout master || git checkout --orphan gh-pages
+            - run: git checkout gh-pages
             - run: git reset --hard
             - run: hugo -t meghna-hugo
             - run: git config user.name "Circle CI"
