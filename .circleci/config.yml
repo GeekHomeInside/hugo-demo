@@ -9,9 +9,6 @@ jobs:
             - COMMIT_AUTHOR_EMAIL: "aetreon.makeo@gmail.com"
             - HUGO_BUILD_DIR: ~/hugo/public
         steps:
-            - add_ssh_keys:
-                fingerprints:
-                  - "d8:ec:fa:7e:92:8e:33:34:5c:a6:e7:95:fb:21:80:2f"
             - checkout
             - run: apk update && apk add git
               #- run: git submodule sync && git submodule update --init
