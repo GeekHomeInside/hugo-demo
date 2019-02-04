@@ -6,7 +6,7 @@ jobs:
             - image: cibuilds/hugo:latest
         working_directory: ~/hugo
         environment:
-            - COMMIT_AUTHOR_EMAIL: "bot.actinium@gmail.com"
+            - COMMIT_AUTHOR_EMAIL: "aetreon.makeo@gmail.com"
             - HUGO_BUILD_DIR: ~/hugo/public
         steps:
             - run: apk update && apk add git
