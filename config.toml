@@ -94,7 +94,7 @@ custom_css = ["css/custom.css"]
         title = "Cups of Coffee"
         icon = "tf-ion-coffee"
         count = "2500"
-    
+
     # footer
     [params.footer]
         copyright = "Themefisher Team"
@@ -104,27 +104,27 @@ custom_css = ["css/custom.css"]
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-facebook"
         url = "#"
-        
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-twitter"
         url = "#"
-        
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-google-outline"
         url = "#"
-        
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-youtube"
         url = "#"
-        
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-linkedin"
-        url = "#"
-        
+        url = "https://www.linkedin.com/company/cclconsulting/"
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-dribbble-outline"
         url = "#"
-        
+
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-pinterest-outline"
         url = "#"
