@@ -6,13 +6,22 @@ jobs:
             - image: cibuilds/hugo:latest
         working_directory: ~/hugo
         environment:
-            - COMMIT_AUTHOR_EMAIL: "aetreon.makeo@gmail.com"
-            - HUGO_BUILD_DIR: ~/hugo/public
+            - GH_EMAIL: "aetreon.makeo@gmail.com"
+            - GH_NAME: "aetreon"
         steps:
+            - add_ssh_keys:
+              fingerprints:
+                - "78:d3:b9:08:0c:34:bd:09:2f:5d:ca:26:27:44:4f:20"
             - checkout
+            - run:
+                name: install git
+                command: apk update && apk add git
             - run:
                 name: Checkout submodules
                 command: git submodule sync && git submodule update --init
+            - run:
+                name: "Test Website"
+                command: htmlproofer ~/public --allow-hash-href --check-html --empty-alt-ignore
             - run:
                 name: Prepare shell commands
                 command: chmod +x .circleci/deploy.sh
