@@ -3,17 +3,18 @@ heading : Our
 headingSpan : Services
 serviceItem :
   - icon : tf-globe
-    title : CLOUD & INFRASTRUCTURE
-    content : Le cloud vous permet d’atteindre la rapidité d’exécution requise pour devenir une entreprise Numérique.
+    title : Cloud & Infrastructure
+    content : The cloud allows you to achieve the speed of execution required to become a digital company.
 
   - icon : tf-ion-laptop
-    title : DIGITAL & DÉVELOPPEMENT
-    content : Adoptez les compétences Numériques qui vous permettront de révolutionner votre activité. Créez des expériences immersives pour vos clients, transformez les pratiques de travail de vos employés, et réinventez vos business Models !
+    title : Digital & Development
+    content : Adopt digital skills that will allow you to revolutionize your business.
+              Create immersive experiences for your customers, transform the work practices of your employees, and reinvent your business models!
 
   - icon : tf-ion-laptop
-    title : AUDIT, CONSEIL & INNOVATION
-    content : Transformez votre vision en des stratégies exécutables qui aboutiront à des Avancées tangibles !
+    title : Audit, Consulting & Innovation
+    content : Turn your vision into executable strategies that lead to tangible Advancements!
 
   - icon : tf-dial
-    title : FORMATION
-    content : A l’ère de la Digitalisation, le partage de l’information est essentiel à la transformation digitale et à la croissance de l’innovation.
+    title : Training
+    content : In the age of Digitalization, information sharing is essential to digital transformation and the growth of innovation.
