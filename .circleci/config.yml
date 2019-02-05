@@ -25,3 +25,12 @@ jobs:
             - deploy:
                 name: Deploy to Github Pages
                 command: ./.circleci/deploy.sh
+workflows:
+  version: 2.1
+  Build And Deploy WebSite:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
