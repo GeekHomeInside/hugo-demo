@@ -2,19 +2,19 @@ enable : true
 heading : Our
 headingSpan : Services
 serviceItem :
-  - icon : tf-globe
+  - icon : tf-ion-cloud
     title : Cloud & Infrastructure
     content : The cloud allows you to achieve the speed of execution required to become a digital company.
 
-  - icon : tf-ion-laptop
+  - icon : tf-ion-android-lock
     title : Digital & Development
     content : Adopt digital skills that will allow you to revolutionize your business.
               Create immersive experiences for your customers, transform the work practices of your employees, and reinvent your business models!
 
-  - icon : tf-ion-laptop
+  - icon : tf-ion-android-microphone
     title : Audit, Consulting & Innovation
     content : Turn your vision into executable strategies that lead to tangible Advancements!
 
-  - icon : tf-dial
+  - icon : tf-ion-android-checkbox
     title : Training
     content : In the age of Digitalization, information sharing is essential to digital transformation and the growth of innovation.
